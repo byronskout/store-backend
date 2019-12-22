@@ -1,0 +1,9 @@
+<div>
+<%= render(@basket.basket_items) %>
+</div>
+<div>
+<%= button_to 'Continue Shopping', products_path, class: 'basket-buttons' %>
+<%= button_to 'Checkout', product_path, class: 'basket-buttons' %>
+<%= button_to 'Empty Basket', @basket, method: :delete, data: { confirm: "Are you sure?" }, class: 'basket-buttons' %><br>
+</div>
+<p>Total: £ <%= @basket.total_price %></p>
