@@ -1,0 +1,31 @@
+<ul class="nav">
+<%= link_to root_path do %>
+    <h1 style="padding-left: 15px;">NowSignage</h1>
+  <% end  %>
+<li class="nav"><a href="/">Home</a></li>
+<li class="nav"><a href="/products">Products</a></li>
+<li class="nav"><a href="#">Contact</a></li>
+
+<nav>
+<% if basket_has_products %>
+<%= link_to basket_path(@basket) do %>
+<span class="basket-counter">
+ Basket
+  <%= basket_count_visible %>
+  </span><br>
+<% end %>
+<% end %>
+<% if user_signed_in? %>
+<% link_to 'Add Product', new_product_path %>
+  <%= link_to 'Account', edit_user_registration_path, class:"menu-item" %><br>
+    <%= link_to current_user.email, edit_user_registration_path, class:"menu-item" %><br>
+    <%= button_to 'Log Out', destroy_user_session_path, :method => "delete", data: { confirm: "Are you sure?" }, class:"menu" %>
+<% else %>
+<div class="menu-not-logged-in">
+<%= link_to "Sign In", new_user_session_path, class:"menu-not-logged-in" %>
+<%= link_to "Sign up", new_user_registration_path, class:"menu-not-logged-in" %>
+</div>
+<% end %>
+</nav>
+
+</ul>
