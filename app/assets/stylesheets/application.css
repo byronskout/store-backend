@@ -224,3 +224,18 @@ li.nav a:hover {
       margin-right: 40px;
       color: white;
     }
+
+      /* RESPONSIVE IMAGES */
+
+  img {
+    max-width: 100%;
+    height: auto; 
+  }
+
+  .product-page-button {
+    margin: 10px;
+  }
+
+  .basket-buttons {
+    margin: 10px;
+  }
