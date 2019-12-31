@@ -225,9 +225,9 @@ li.nav a:hover {
       color: white;
     }
 
-      /* RESPONSIVE IMAGES */
+   /* RESPONSIVE IMAGES */
 
-  img {
+   img {
     max-width: 100%;
     height: auto; 
   }
@@ -238,4 +238,14 @@ li.nav a:hover {
 
   .basket-buttons {
     margin: 10px;
+  }
+
+  .menu-item {
+    color: white;
+    float: right;
+    padding-right: 40px;
+  }
+
+  .nav-buttons {
+    float: left;
   }
