@@ -208,3 +208,19 @@ li.nav a:hover {
   a.menu-not-logged-in {
     color: white;
   }
+
+    /* BASKET NAVBAR */
+
+    .remove_cart_item {
+      float: left;
+    }
+  
+    .basket-item {
+      margin: 80px;
+    }
+  
+    .basket-counter {
+      float: right;
+      margin-right: 40px;
+      color: white;
+    }
