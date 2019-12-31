@@ -197,3 +197,14 @@ li.nav a:hover {
       margin-top: 0;
     }
   }
+
+  /* NAVBAR MENU LOGGED IN - LOGGED OUT */
+
+  .menu-not-logged-in {
+    padding-right: 10px;
+    float: right;
+  }
+
+  a.menu-not-logged-in {
+    color: white;
+  }
